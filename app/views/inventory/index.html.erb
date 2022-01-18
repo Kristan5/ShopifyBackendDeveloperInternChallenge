@@ -3,7 +3,6 @@
 
     <%= link_to "New Item", new_inventory_path %>
 
-
     <table>
 
         <tr>
@@ -15,7 +14,7 @@
             <td>Delete</td>
         </tr>
 
-        <% @items.each do |i| %>
+        <% @inventory_items.each do |i| %>
             <tr>
                 <td><%= i.id %></td>
                 <td><%= i.description %></td>
@@ -23,7 +22,6 @@
                 <td><%= i.price %></td>
                 <td></td>
                 <td><%= link_to 'Destroy', i, method: :delete, data: {confirm: 'Are you sure?'} %></td>
-
 
             </tr>
         <% end %>

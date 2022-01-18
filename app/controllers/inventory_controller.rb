@@ -3,36 +3,36 @@ require 'csv'
 class InventoryController < ApplicationController
 
   def index
-    @items = Inventory.all
+    @inventory_items = Inventory.all
 
     respond_to do |format|
       format.html
-      format.csv { render text: @items.to_csv }
+      format.csv { render text: @inventory_items.to_csv }
     end
   end
 
   def new
-    @item = Inventory.new
+    @inventory = Inventory.new
   end
-
-  def destroy
-    @item = Inventory.find(params[:id])
-    @item.destroy
-    redirect_to :root
-  end 
 
   def create
-    @item = Inventory.new(inventory_params)
+    @inventory = Inventory.new(inventory_params)
 
-    @item.save
+    @inventory.save
     redirect_to :root
   end
 
 
+  
+  def destroy
+    @inventory = Inventory.find(params[:id])
+    @inventory.destroy
+    redirect_to :root
+  end 
 
   private
 
   def inventory_params
-    params.require(:inventory).permit(:description, :quantity, :price)
+    params.permit(:description, :quantity, :price)
   end
 end

@@ -1,4 +1,8 @@
 class Inventory < ApplicationRecord
+    validates :description, presence: true, length: {maximum: 20}
+    validates :price, presence: true
+    validates :quantity, presence: true
+
     def self.to_csv
         CSV.generate(headers: true) do |csv|
             csv << column_names
