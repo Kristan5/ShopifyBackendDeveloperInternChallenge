@@ -1,0 +1,22 @@
+<h1>New Inventory Item</h1>
+
+<%= form_with model: @item do |form| %>
+  <div>
+    <%= form.label :description %><br>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :quantity %><br>
+    <%= form.text_area :quantity %>
+  </div>
+
+  <div>
+    <%= form.label :price %><br>
+    <%= form.text_area :price %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

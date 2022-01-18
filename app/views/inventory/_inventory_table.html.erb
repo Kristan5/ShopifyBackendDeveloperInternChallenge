@@ -1,0 +1,8 @@
+<% Inventory.all.each do |i| %>
+    <tr>
+        <td><%= i.id %></td>
+        <td><%= i.description %></td>
+        <td><%= i.quantity %></td>
+        <td><%= i.price %></td>
+    </tr>
+<% end %>
