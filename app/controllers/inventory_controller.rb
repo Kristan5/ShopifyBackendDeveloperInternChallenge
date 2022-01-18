@@ -22,7 +22,15 @@ class InventoryController < ApplicationController
     redirect_to :root
   end
 
+  def edit
+    @inventory = Inventory.find(params[:id])
+  end
 
+  def update
+    @inventory = Inventory.find(params[:id])
+    @inventory.update(inventory_params)
+    redirect_to :root
+  end
   
   def destroy
     @inventory = Inventory.find(params[:id])

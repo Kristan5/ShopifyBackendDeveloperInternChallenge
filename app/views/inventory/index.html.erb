@@ -20,7 +20,7 @@
                 <td><%= i.description %></td>
                 <td><%= i.quantity %></td>
                 <td><%= i.price %></td>
-                <td></td>
+                <td><%= link_to "Edit", edit_inventory_path(i) %></td>
                 <td><%= link_to 'Destroy', i, method: :delete, data: {confirm: 'Are you sure?'} %></td>
 
             </tr>
