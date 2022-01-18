@@ -1,5 +1,3 @@
-require 'csv'
-
 class InventoryController < ApplicationController
 
   def index
@@ -7,7 +5,7 @@ class InventoryController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.csv { render text: @inventory_items.to_csv }
+      format.csv { send_data @inventory_items.to_csv, filename: 'inventory.csv' }
     end
   end
 

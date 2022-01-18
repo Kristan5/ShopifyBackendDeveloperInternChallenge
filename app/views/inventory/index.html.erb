@@ -1,10 +1,9 @@
 <body>
     <h3>Inventory Tracking System</h3>
-
     <%= link_to "New Item", new_inventory_path %>
+    <%= link_to "Export CSV",  inventory_path(format: "csv")%>
 
     <table>
-
         <tr>
             <td>ID</td>
             <td>Description</td>
@@ -13,7 +12,6 @@
             <td>Edit</td>
             <td>Delete</td>
         </tr>
-
         <% @inventory_items.each do |i| %>
             <tr>
                 <td><%= i.id %></td>
@@ -22,9 +20,7 @@
                 <td><%= i.price %></td>
                 <td><%= link_to "Edit", edit_inventory_path(i) %></td>
                 <td><%= link_to 'Destroy', i, method: :delete, data: {confirm: 'Are you sure?'} %></td>
-
             </tr>
         <% end %>
-        
     </table>
 </body>
