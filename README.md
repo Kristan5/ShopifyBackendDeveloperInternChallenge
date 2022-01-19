@@ -1,9 +1,8 @@
 # Shopify Backend Developer Intern Challenge - Summer 2022
 
-This is my submission for Shopify's Backend Developer Intern Challenge for Summer of 2022. It is a simple CRUD web app for a logistics company that allows the user 
-to create, read, update, and delete items. 
+This is my submission for Shopify's Backend Developer Intern Challenge for Summer of 2022. It is a simple CRUD web app for a logistics company that allows the user to create, read, update, and delete items. 
 
-For my one additional feature I chose to implement "Push a button export product data to a CSV"
+For my one additional feature I chose to implement **"Push a button export product data to a CSV"**
 
 ## Built Using: 
 - ruby 2.6.2p47
@@ -14,7 +13,7 @@ For my one additional feature I chose to implement "Push a button export product
 
 Here is how to get the application running locally: 
 
-To seed some test data: 
+To seed some test data: (Not mandatory to get application running)
 
 `rails db:seed`
 
