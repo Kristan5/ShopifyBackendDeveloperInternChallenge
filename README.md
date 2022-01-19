@@ -6,6 +6,7 @@
 - ruby 2.6.2p47
 
 * System dependencies
+- csv
 
 * Configuration
 
