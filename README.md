@@ -16,11 +16,11 @@ Here is how to get the application running locally:
 
 To seed some test data: 
 
-rails db:seed
+'''rails db:seed'''
 
 To run the rails server: 
 
-rails server
+'''rails server'''
 
 The web app should be accessible at:
 
@@ -29,7 +29,7 @@ http://localhost:3000/
 
 * Some screenshots of the application: 
 
-![Screenshot#1](/Users/kskri/Downloads/ss1.png)
-![Screenshot#2](/Users/kskri/Downloads/ss2.png)
-![Screenshot#3](/Users/kskri/Downloads/ss3.png)
-![Screenshot#4](/Users/kskri/Downloads/ss4.png)
+<img width="458" alt="ss1" src="https://user-images.githubusercontent.com/25699719/150040449-267c7051-0148-43c5-8f52-edb8c4d74af8.png">
+<img width="502" alt="ss2" src="https://user-images.githubusercontent.com/25699719/150040450-3c76deba-c9b5-4158-a601-7d65bb94f4f7.png">
+<img width="450" alt="ss3" src="https://user-images.githubusercontent.com/25699719/150040451-aa67450e-63c6-48ae-b0b0-a17e7af2355c.png">
+<img width="979" alt="ss4" src="https://user-images.githubusercontent.com/25699719/150040453-fda0d465-5395-4c4c-a762-abf53d3f9bc7.png">
