@@ -1,7 +1,7 @@
 # Shopify Backend Developer Intern Challenge - Summer 2022
 
 This is my submission for Shopify's Backend Developer Intern Challenge for Summer of 2022. It is a simple CRUD web app for a logistics company that allows the user to create, read, update, and delete items. 
-
+ 
 For my one additional feature I chose to implement **"Push a button export product data to a CSV"**
 
 ## Built Using: 
