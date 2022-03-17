@@ -8,7 +8,7 @@ class Inventory < ApplicationRecord
             csv << column_names
 
             all.each do |item|
-            csv << item.attributes.values_at(*column_names)
+                csv << item.attributes.values_at(*column_names)
             end
         end
     end
